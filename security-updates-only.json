@@ -9,7 +9,7 @@
     "workarounds:all"
   ],
   "dependencyDashboard": false,
-  "recreateClosed": true,
+  "transitiveRemediation": true,
   "packageRules": [{
     "packagePatterns": ["*"],
     "enabled": false
