@@ -1,14 +1,3 @@
 {
-  "extends": [
-    "config:base"
-  ],
-  "dependencyDashboard": false,
-  "packageRules": [{
-    "packagePatterns": ["*"],
-    "enabled": false
-  }],
-  "vulnerabilityAlerts": {
-    "automerge": false,
-    "enabled": true
-  }
+  "extends": ["github>bitrise-io/renovate-config:security-updates-only"]
 }
