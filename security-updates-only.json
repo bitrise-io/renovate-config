@@ -2,7 +2,7 @@
   "extends": [
     "config:base"
   ],
-  "dependencyDashboard": true,
+  "dependencyDashboard": false,
   "packageRules": [{
     "packagePatterns": ["*"],
     "enabled": false
