@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "dependencyDashboard": false,
+  "packageRules": [{
+    "packagePatterns": ["*"],
+    "enabled": false
+  }],
+  "vulnerabilityAlerts": {
+    "automerge": false,
+    "enabled": true
+  }
+}
