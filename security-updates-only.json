@@ -1,6 +1,12 @@
 {
   "extends": [
-    "config:base"
+    ":semanticPrefixFixDepsChoreOthers",
+    ":ignoreModulesAndTests",
+    ":autodetectPinVersions",
+    ":prConcurrentLimit20",
+    "group:monorepos",
+    "group:recommended",
+    "workarounds:all"
   ],
   "dependencyDashboard": false,
   "packageRules": [{
