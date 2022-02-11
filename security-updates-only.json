@@ -8,6 +8,7 @@
     "group:recommended",
     "workarounds:all"
   ],
+  "labels": ["renovate"],
   "dependencyDashboard": false,
   "transitiveRemediation": true,
   "packageRules": [{
