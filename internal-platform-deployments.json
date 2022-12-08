@@ -1,0 +1,12 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["local>bitrise-io/renovate-config:internal-platform"],
+
+  "description": "Default Renovate configuration for Internal Platform Deployment repositories",
+
+  "baseBranches": ["staging"],
+  "postUpdateOptions": ["helmUpdateSubChartArchives"],
+
+  "timezone": "UTC",
+  "schedule": ["after 9am on monday"]
+}
