@@ -12,7 +12,7 @@
   "dependencyDashboard": false,
   "transitiveRemediation": true,
   "packageRules": [{
-    "packagePatterns": ["*"],
+    "matchPackagePatterns": ["*"],
     "enabled": false
   }],
   "vulnerabilityAlerts": {
