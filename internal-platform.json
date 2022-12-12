@@ -1,15 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["local>bitrise-io/renovate-config"],
-
   "description": "Default Renovate configuration for Internal Platform repositories",
-
-  "packageRules": [{
-    "matchPackagePatterns": ["*"],
-    "enabled": true
-  }],
-
+  "addLabels": ["renovate-internal-platform"],
+  "dependencyDashboard": true,
   "groupName": "all",
-
-  "dependencyDashboard": true
+  "packageRules": [{
+    "enabled": true,
+    "matchPackagePatterns": ["*"],
+    "matchUpdateTypes": ["major", "minor"]
+  }]
 }
