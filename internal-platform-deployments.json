@@ -7,8 +7,8 @@
   "dependencyDashboard": true,
   "groupName": "all",
   "packageRules": [{
-    "enabled": true,
-    "matchPackagePatterns": ["*"]
+    "matchPackagePatterns": ["*"],
+    "enabled": true
   }],
   "postUpdateOptions": ["helmUpdateSubChartArchives"],
   "schedule": ["after 9am on monday"],
