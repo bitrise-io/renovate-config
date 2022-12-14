@@ -5,9 +5,11 @@
   "addLabels": ["renovate-internal-platform"],
   "dependencyDashboard": true,
   "groupName": "all",
+  "patch": {
+    "enabled": false
+  },
   "packageRules": [{
-    "enabled": true,
     "matchPackagePatterns": ["*"],
-    "matchUpdateTypes": ["major", "minor"]
+    "enabled": true
   }]
 }
