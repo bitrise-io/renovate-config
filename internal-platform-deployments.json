@@ -1,16 +1,17 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["local>bitrise-io/renovate-config"],
+  "extends": [
+    "local>bitrise-io/renovate-config",
+    ":dependencyDashboard",
+    "group:all",
+    "schedule:weekly"
+  ],
   "description": "Default Renovate configuration for Internal Platform Deployment repositories",
-  "addLabels": ["renovate-internal-platform-deployments"],
+  "labels": ["renovate", "renovate-internal-platform-deployments"],
   "baseBranches": ["staging"],
-  "dependencyDashboard": true,
-  "groupName": "all",
   "packageRules": [{
     "matchPackagePatterns": ["*"],
     "enabled": true
   }],
-  "postUpdateOptions": ["helmUpdateSubChartArchives"],
-  "schedule": ["after 9am on monday"],
-  "timezone": "UTC"
+  "postUpdateOptions": ["helmUpdateSubChartArchives"]
 }
