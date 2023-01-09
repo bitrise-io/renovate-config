@@ -10,6 +10,7 @@
   ],
   "labels": ["renovate", "renovate-swat"],
   "dependencyDashboard": false,
+  "rebaseWhen": "never",
   "transitiveRemediation": true,
   "packageRules": [{
     "matchPackagePatterns": ["*"],
