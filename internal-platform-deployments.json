@@ -3,8 +3,7 @@
   "extends": [
     "local>bitrise-io/renovate-config",
     ":dependencyDashboard",
-    "group:all",
-    "schedule:weekly"
+    "group:all"
   ],
   "description": "Default Renovate configuration for Internal Platform Deployment repositories",
   "labels": ["renovate", "renovate-internal-platform-deployments"],
@@ -13,5 +12,6 @@
     "matchPackagePatterns": ["*"],
     "enabled": true
   }],
-  "postUpdateOptions": ["helmUpdateSubChartArchives"]
+  "postUpdateOptions": ["helmUpdateSubChartArchives"],
+  "schedule": ["on the last day instance on Thursday"]
 }
