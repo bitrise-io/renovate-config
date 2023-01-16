@@ -3,8 +3,7 @@
   "extends": [
     "local>bitrise-io/renovate-config",
     ":dependencyDashboard",
-    "group:all",
-    "schedule:weekly"
+    "group:all"
   ],
   "description": "Default Renovate configuration for Internal Platform repositories",
   "labels": ["renovate", "renovate-internal-platform"],
@@ -17,5 +16,6 @@
   "packageRules": [{
     "matchPackagePatterns": ["*"],
     "enabled": true
-  }]
+  }],
+  "schedule": ["on the last day instance on Thursday"]
 }
