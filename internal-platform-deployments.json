@@ -7,7 +7,7 @@
   ],
   "description": "Default Renovate configuration for Internal Platform Deployment repositories",
   "labels": ["renovate", "renovate-internal-platform-deployments"],
-  "baseBranches": ["staging"],
+  "baseBranches": ["staging", "production"],
   "packageRules": [{
     "matchPackagePatterns": ["*"],
     "enabled": true
