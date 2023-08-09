@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "local>bitrise-io/renovate-config",
+    ":dependencyDashboard",
+    "group:all",
+    "schedule:monthly"
+  ],
+  "description": "Default Renovate configuration for GitOps deployment repositories",
+  "labels": ["renovate", "renovate-deployment-repositories"],
+  "baseBranches": ["staging", "production"],
+  "packageRules": [{
+    "matchPackagePatterns": ["*"],
+    "enabled": true
+  }],
+  "postUpdateOptions": ["helmUpdateSubChartArchives"]
+}
