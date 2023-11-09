@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Default Renovate configuration for Web Pillar repositories",
+  "extends": [
+    "local>bitrise-io/renovate-config",
+    ":dependencyDashboard",
+    "group:all"
+  ],
+  "labels": ["renovate", "renovate-web-pillar-repositories"],
+  "packageRules": [{
+    "matchPackagePatterns": ["*"],
+    "enabled": true
+  }],
+  "rebaseWhen": "auto",
+  "schedule": ["before 8am on Monday"],
+  "transitiveRemediation": true,
+  "vulnerabilityAlerts": {
+    "automerge": false,
+    "enabled": true
+  }
+}
