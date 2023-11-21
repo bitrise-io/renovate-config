@@ -23,11 +23,39 @@
       ]
     },
     {
+      "enabled": true,
+      "matchDepTypes": ["indirect"],
+      "matchManagers": ["gomod"],
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "pin",
+        "pinDigest",
+        "digest",
+        "lockFileMaintenance",
+        "rollback",
+        "bump",
+        "replacement"
+      ]
+    },
+    {
       "automerge": true,
       "matchUpdateTypes": [
         "patch"
       ]
+    },
+    {
+      "automerge": true,
+      "enabled": true,
+      "matchDepTypes": ["indirect"],
+      "matchManagers": ["gomod"],
+      "matchUpdateTypes": [
+        "patch"
+      ]
     }
+  ],
+  "postUpdateOptions": [
+    "gomodTidy"
   ],
   "rebaseWhen": "auto",
   "transitiveRemediation": true,
