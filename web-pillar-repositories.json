@@ -10,22 +10,26 @@
   "labels": ["renovate", "renovate-web-pillar-repositories"],
   "packageRules": [
     {
-      "enabled": true,
-      "matchPackagePatterns": ["*"],
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "pin",
+        "pinDigest",
+        "digest",
+        "lockFileMaintenance",
+        "rollback",
+        "bump",
+        "replacement"
+      ]
     },
     {
       "automerge": true,
-      "enabled": true,
-      "matchPackagePatterns": [
-        "*"
-      ],
       "matchUpdateTypes": [
         "patch"
       ]
     }
   ],
   "rebaseWhen": "auto",
-  "schedule": ["at 8am on Monday"],
   "transitiveRemediation": true,
   "vulnerabilityAlerts": {
     "automerge": false,
