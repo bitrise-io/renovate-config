@@ -4,7 +4,7 @@
   "description": "Default Renovate configuration for Web Pillar repositories",
   "extends": [
     ":dependencyDashboard",
-    "group:all"
+    "group:allNonMajor"
   ],
   "labels": ["renovate", "renovate-web-pillar-repositories"],
   "packageRules": [
