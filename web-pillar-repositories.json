@@ -61,5 +61,9 @@
   "vulnerabilityAlerts": {
     "automerge": false,
     "enabled": true
-  }
+  },
+  {
+    "matchDatasources": ["npm"],
+    "addLabels": ["npm"]
+  },
 }
