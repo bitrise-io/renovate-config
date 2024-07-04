@@ -51,6 +51,21 @@
       "matchUpdateTypes": [
         "patch"
       ]
+    },
+    {
+      "matchDatasources": ["rubygems"],
+      "addLabels": ["rubygem"],
+      "groupName": "ruby gem updates"
+    },
+    {
+      "matchDatasources": ["go"],
+      "addLabels": ["go"],
+      "groupName": "go updates"
+    },
+    {
+      "matchDatasources": ["npm"],
+      "addLabels": ["npm"],
+      "groupName": "npm updates"
     }
   ],
   "postUpdateOptions": [
@@ -61,9 +76,5 @@
   "vulnerabilityAlerts": {
     "automerge": false,
     "enabled": true
-  },
-  {
-    "matchDatasources": ["npm"],
-    "addLabels": ["npm"]
   }
 }
