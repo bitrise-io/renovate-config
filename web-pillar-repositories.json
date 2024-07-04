@@ -74,6 +74,16 @@
       "matchDatasources": ["npm"],
       "addLabels": ["npm"],
       "groupName": "npm packages"
+    },
+    {
+      "matchDatasources": ["node"],
+      "addLabels": ["node"],
+      "groupName": "node"
+    },
+    {
+      "matchDatasources": ["ruby"],
+      "addLabels": ["ruby"],
+      "groupName": "ruby"
     }
   ],
   "postUpdateOptions": ["gomodTidy"],
