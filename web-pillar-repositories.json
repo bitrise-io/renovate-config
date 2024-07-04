@@ -3,15 +3,18 @@
   "automergeSchedule": ["at 10am on Monday except on 25th of December in 2023 and 1st of January 2024 and 1st of April 2024 and 20th of May 2024 and 19th of August 2024"],
   "description": "Default Renovate configuration for Web Pillar repositories",
   "extends": [
-    ":dependencyDashboard",
-    "group:allNonMajor"
+    ":dependencyDashboard"
   ],
   "labels": ["renovate", "renovate-web-pillar-repositories"],
   "packageRules": [
     {
+      "matchUpdateTypes": ["major"],
+      "groupName": null
+    },
+    {
       "matchUpdateTypes": [
-        "major",
         "minor",
+        "patch",
         "pin",
         "pinDigest",
         "digest",
@@ -19,15 +22,23 @@
         "rollback",
         "bump",
         "replacement"
-      ]
+      ],
+      "groupName": "all non-major updates"
+    },
+    {
+      "enabled": true,
+      "matchDepTypes": ["indirect"],
+      "matchManagers": ["gomod"],
+      "matchUpdateTypes": ["major"],
+      "groupName": null
     },
     {
       "enabled": true,
       "matchDepTypes": ["indirect"],
       "matchManagers": ["gomod"],
       "matchUpdateTypes": [
-        "major",
         "minor",
+        "patch",
         "pin",
         "pinDigest",
         "digest",
@@ -35,22 +46,19 @@
         "rollback",
         "bump",
         "replacement"
-      ]
+      ],
+      "groupName": "all non-major updates"
     },
     {
       "automerge": true,
-      "matchUpdateTypes": [
-        "patch"
-      ]
+      "matchUpdateTypes": ["patch"]
     },
     {
       "automerge": true,
       "enabled": true,
       "matchDepTypes": ["indirect"],
       "matchManagers": ["gomod"],
-      "matchUpdateTypes": [
-        "patch"
-      ]
+      "matchUpdateTypes": ["patch"]
     },
     {
       "matchDatasources": ["rubygems"],
@@ -68,9 +76,7 @@
       "groupName": "npm packages"
     }
   ],
-  "postUpdateOptions": [
-    "gomodTidy"
-  ],
+  "postUpdateOptions": ["gomodTidy"],
   "rebaseWhen": "auto",
   "transitiveRemediation": true,
   "vulnerabilityAlerts": {
