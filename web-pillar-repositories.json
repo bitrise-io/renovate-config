@@ -65,5 +65,5 @@
   {
     "matchDatasources": ["npm"],
     "addLabels": ["npm"]
-  },
+  }
 }
