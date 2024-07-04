@@ -55,17 +55,17 @@
     {
       "matchDatasources": ["rubygems"],
       "addLabels": ["rubygem"],
-      "groupName": "ruby gem updates"
+      "groupName": "ruby gems"
     },
     {
       "matchDatasources": ["go"],
       "addLabels": ["go"],
-      "groupName": "go updates"
+      "groupName": "go modules"
     },
     {
       "matchDatasources": ["npm"],
       "addLabels": ["npm"],
-      "groupName": "npm updates"
+      "groupName": "npm packages"
     }
   ],
   "postUpdateOptions": [
