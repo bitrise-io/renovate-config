@@ -8,10 +8,6 @@
   "labels": ["renovate", "renovate-web-pillar-repositories"],
   "packageRules": [
     {
-      "matchUpdateTypes": ["major"],
-      "groupName": null
-    },
-    {
       "matchUpdateTypes": [
         "minor",
         "patch",
@@ -84,6 +80,10 @@
       "matchDatasources": ["ruby"],
       "addLabels": ["ruby"],
       "groupName": "ruby"
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "groupName": null
     }
   ],
   "postUpdateOptions": ["gomodTidy"],
