@@ -92,6 +92,7 @@
   "transitiveRemediation": true,
   "vulnerabilityAlerts": {
     "automerge": false,
-    "enabled": true
+    "enabled": true,
+    "labels": ["website-security"]
   }
 }
