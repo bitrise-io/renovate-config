@@ -18,6 +18,7 @@
   }],
   "vulnerabilityAlerts": {
     "automerge": false,
-    "enabled": true
+    "enabled": true,
+    "labels": ["security"]
   }
 }
