@@ -79,6 +79,11 @@
     {
       "automerge": true,
       "matchUpdateTypes": ["patch"]
+    },
+    {
+      "automerge": true,
+      "matchDatasources": ["go"],
+      "matchUpdateTypes": ["minor"]
     }
   ],
   "postUpdateOptions": ["gomodTidy"],
