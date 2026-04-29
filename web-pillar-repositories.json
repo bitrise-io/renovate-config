@@ -90,7 +90,6 @@
   "rebaseWhen": "auto",
   "transitiveRemediation": true,
   "vulnerabilityAlerts": {
-    "automerge": false,
     "enabled": true,
     "labels": ["website-security"]
   }
