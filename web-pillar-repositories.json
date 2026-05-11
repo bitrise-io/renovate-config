@@ -8,6 +8,7 @@
   ],
   "labels": ["renovate", "renovate-web-pillar-repositories"],
   "automergeType": "pr",
+  "minimumReleaseAge": "14 days",
   "packageRules": [
     {
       "matchUpdateTypes": [
