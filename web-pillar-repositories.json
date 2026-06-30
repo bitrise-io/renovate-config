@@ -69,7 +69,19 @@
       "groupName": "node"
     },
     {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["node"],
+      "addLabels": ["node"],
+      "groupName": "node"
+    },
+    {
       "matchDatasources": ["ruby"],
+      "addLabels": ["ruby"],
+      "groupName": "ruby"
+    },
+    {
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["ruby"],
       "addLabels": ["ruby"],
       "groupName": "ruby"
     },
