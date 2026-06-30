@@ -78,6 +78,31 @@
       "groupName": null
     },
     {
+      "description": "Group family/monorepo packages into one PR (placed after the major->null rule so it also applies to majors).",
+      "matchDatasources": ["rubygems"],
+      "matchPackageNames": ["rubocop", "rubocop-*"],
+      "groupName": "rubocop",
+      "addLabels": ["rubygem"]
+    },
+    {
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@babel/**"],
+      "groupName": "babel",
+      "addLabels": ["npm"]
+    },
+    {
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["storybook", "@storybook/**"],
+      "groupName": "storybook",
+      "addLabels": ["npm"]
+    },
+    {
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["@datadog/browser-*"],
+      "groupName": "datadog-browser",
+      "addLabels": ["npm"]
+    },
+    {
       "automerge": true,
       "matchUpdateTypes": ["patch"]
     },
