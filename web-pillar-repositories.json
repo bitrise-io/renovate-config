@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "schedule": ["on Monday at 04:00"],
-  "automergeSchedule": ["at 10am on Monday"],
+  "schedule": ["* 0-10 * * 1"],
+  "automergeSchedule": ["* 0-10 * * 2"],
   "description": "Default Renovate configuration for Web Pillar repositories",
   "extends": [
     ":dependencyDashboard"
