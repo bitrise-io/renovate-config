@@ -7,6 +7,7 @@
     ":dependencyDashboard"
   ],
   "labels": ["renovate", "renovate-web-pillar-repositories"],
+  "reviewers": ["bitrise-io-kolega"],
   "automergeType": "pr",
   "minimumReleaseAge": "14 days",
   "packageRules": [
@@ -116,12 +117,14 @@
     },
     {
       "automerge": true,
-      "matchUpdateTypes": ["patch"]
+      "matchUpdateTypes": ["patch"],
+      "reviewers": []
     },
     {
       "automerge": true,
       "matchDatasources": ["go"],
-      "matchUpdateTypes": ["minor"]
+      "matchUpdateTypes": ["minor"],
+      "reviewers": []
     }
   ],
   "postUpdateOptions": ["gomodTidy"],
