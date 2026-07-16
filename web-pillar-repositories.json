@@ -7,7 +7,7 @@
     ":dependencyDashboard"
   ],
   "labels": ["renovate", "renovate-web-pillar-repositories"],
-  "reviewers": ["bitrise-io-kolega"],
+  "assignees": ["bitrise-io-kolega"],
   "automergeType": "pr",
   "minimumReleaseAge": "14 days",
   "packageRules": [
