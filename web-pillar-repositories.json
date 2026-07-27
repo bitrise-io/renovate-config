@@ -10,6 +10,7 @@
   "assignees": ["bitrise-io-kolega"],
   "automergeType": "pr",
   "minimumReleaseAge": "14 days",
+  "ignorePaths": ["vendor/**"],
   "packageRules": [
     {
       "matchUpdateTypes": [
