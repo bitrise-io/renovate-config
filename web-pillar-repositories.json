@@ -9,7 +9,7 @@
   "labels": ["renovate", "renovate-web-pillar-repositories"],
   "automergeType": "pr",
   "minimumReleaseAge": "14 days",
-  "ignorePaths": ["vendor/**"]
+  "ignorePaths": ["vendor/**"],
   "packageRules": [
     {
       "matchUpdateTypes": [
