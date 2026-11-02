@@ -65,7 +65,7 @@
       "groupName": "npm packages"
     },
     {
-      "matchDatasources": ["node"],
+      "matchDatasources": ["node-version"],
       "addLabels": ["node"],
       "groupName": "node"
     },
@@ -123,6 +123,20 @@
       "automerge": true,
       "matchDatasources": ["go"],
       "matchUpdateTypes": ["minor"]
+    },
+    {
+      "description": "Node.js moves in every repo on the same day, to the same version: one PR on the first of the month, merged on its own.",
+      "matchDatasources": ["node-version", "docker"],
+      "matchPackageNames": ["node"],
+      "schedule": ["* 0-10 1 * *"],
+      "automerge": true
+    },
+    {
+      "description": "Node.js majors are a manual bump, once a year, when the new LTS lands.",
+      "matchDatasources": ["node-version", "docker"],
+      "matchPackageNames": ["node"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
     }
   ],
   "postUpdateOptions": ["gomodTidy"],
